@@ -1,5 +1,5 @@
 $$
-\nabra A, \nabra \cdot \vec{A}, \nabra \times \vec{A}
+\nabla A, \nabla \cdot \vec{A}, \nabla \times \vec{A}
 $$
 
 とはなんだろ
