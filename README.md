@@ -4,7 +4,7 @@ $$
 
 とはなんだろ
 
-最終もくひょ
+最終目標
 
 $$
 \nabla \times (\nabla \times \vec{A})
