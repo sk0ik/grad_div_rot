@@ -23,4 +23,8 @@ $$
 
 と書ける.
 
-２次元極座標では
+円筒極座標では
+
+$$
+\nabla \times \vec{A} = \biggl(\frac{1}{r} \frac{\partial A _ z}{\partial \theta} - \frac{\partial A _ \theta}{\partial z} \biggr)\vec{e _ r} + \biggl(\frac{\partial A _ r}{\partial z} - \frac{\partial A _ z}{\partial r}\biggr) \vec{e _ \theta} + \frac{1}{r} \biggl(\frac{\partial (r A _ \theta)}{\partial r} - \frac{\partial A _ r}{\partial \theta} \biggr) \vec{e _ z}
+$$
