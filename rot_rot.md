@@ -3,15 +3,7 @@
 1. [回転を2回とるということについて考える](#回転を2回とるということについて考える)
    1. [なぜそんなことを考えるのか](#なぜそんなことを考えるのか)
    2. [数式で見てみる](#数式で見てみる)
-2. [\\frac{\\partial}{\\partial r} \\vec{e} \_ r](#fracpartialpartial-r-vece-_-r)
-3. [0,\\frac{\\partial}{\\partial r} \\vec{e} \_ \\theta](#0fracpartialpartial-r-vece-_-theta)
-4. [0,\\frac{\\partial}{\\partial r} \\vec{e} \_ z](#0fracpartialpartial-r-vece-_-z)
-5. [\\frac{\\partial}{\\partial \\theta} \\vec{e} \_ r](#fracpartialpartial-theta-vece-_-r)
-6. [\\vec{e} \_ \\theta, \\frac{\\partial}{\\partial \\theta} \\vec{e} \_ \\theta](#vece-_-theta-fracpartialpartial-theta-vece-_-theta)
-7. [-\\vec{e} \_ r, \\frac{\\partial}{\\partial \\theta} \\vec{e} \_ z](#-vece-_-r-fracpartialpartial-theta-vece-_-z)
-8. [\\frac{\\partial}{\\partial z} \\vec{e} \_ r](#fracpartialpartial-z-vece-_-r)
-9. [0, \\frac{\\partial}{\\partial z} \\vec{e} \_ \\theta](#0-fracpartialpartial-z-vece-_-theta)
-10. [0, \\frac{\\partial}{\\partial z} \\vec{e} \_ z](#0-fracpartialpartial-z-vece-_-z)
+
 
 ## なぜそんなことを考えるのか
 
