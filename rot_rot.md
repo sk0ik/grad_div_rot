@@ -110,8 +110,7 @@ $$
 に対して回転をとると
 
 $$
-\nabla \times \vec{A}
-=
+\nabla \times \vec{A} =
 \Bigl (\vec{e} _ r \frac{\partial}{\partial r} + \frac{1}{r} \vec{e} _ \theta \frac{\partial}{\partial \theta} + \vec{e} _ z \frac{\partial}{\partial z} \Bigr ) \times (\vec{e} _ r A _ r + \vec{e} _ {\theta} A _ {\theta})
 $$
 
@@ -122,7 +121,7 @@ $$
 $$
 
 $$
-= A _ r \vec{e} _ r \times \frac{\partial \vec{e} _ r}{\partial r} + \frac{\partial A _ r}{\partial r} \vec{e} _ r \times \vec{e} _ r  + A _ {\theta} \vec{e} _ r \times \frac{\partial \vec{e} _ {\theta}}{\partial r} + \frac{\partial A _ {\theta}}{\partial r} \vec{e} _ r \times \vec{e} _ {\theta} \newline
+=A _ r \vec{e} _ r \times \frac{\partial \vec{e} _ r}{\partial r} + \frac{\partial A _ r}{\partial r} \vec{e} _ r \times \vec{e} _ r  + A _ {\theta} \vec{e} _ r \times \frac{\partial \vec{e} _ {\theta}}{\partial r} + \frac{\partial A _ {\theta}}{\partial r} \vec{e} _ r \times \vec{e} _ {\theta} \newline
 +
 \frac{1}{r} A _ r \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ r}{\partial {\theta}} + \frac{1}{r} \frac{\partial A _ r}{\partial \theta} \vec{e} _ {\theta} \times \vec{e} _ r + \frac{1}{r} A _ {\theta} \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ \theta}{\partial \theta} + \frac{1}{r} \frac{\partial A _ {\theta}}{\partial r} \vec{e} _ {\theta} \times \vec{e} _ {\theta} \newline
 +
