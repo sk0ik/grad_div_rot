@@ -95,9 +95,7 @@ $$
 となるが基底ベクトルの微分
 
 $$
-\frac{\partial}{\partial r} \vec{e} _ r =
-0,\frac{\partial}{\partial r} \vec{e} _ \theta =
-0,\frac{\partial}{\partial r} \vec{e} _ z = 0
+\frac{\partial}{\partial r} \vec{e} _ r = 0 \frac{\partial}{\partial r} \vec{e} _ \theta = 0\frac{\partial}{\partial r} \vec{e} _ z = 0
 $$
 
 $$
@@ -148,7 +146,19 @@ $$
 $$
 
 $$
-= A _ r \vec{e} _ r \times \frac{\partial \vec{e} _ r}{\partial r} + \frac{\partial A _ r}{\partial r} \vec{e} _ r \times \vec{e} _ r + A _ {\theta} \vec{e} _ r \times \frac{\partial \vec{e} _ {\theta}}{\partial r} + \frac{\partial A _ {\theta}}{\partial r} \vec{e} _ r \times \vec{e} _ {\theta}  + A _ z \vec{e} _ r \times \frac{\partial \vec{e} _ z}{\partial r} + \frac{\partial A _ z}{\partial r} \vec{e} _ r \times \vec{e} _ z + \frac{1}{r} A _ r \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ r}{\partial {\theta}} + \frac{1}{r} \frac{\partial A _ r}{\partial \theta} \vec{e} _ {\theta} \times \vec{e} _ r + \frac{1}{r} A _ {\theta} \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ \theta}{\partial \theta} + \frac{1}{r} \frac{\partial A _ {\theta}}{\partial r} \vec{e} _ {\theta} \times \vec{e} _ {\theta} + \frac{1}{r} A _ z \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ z}{\partial {\theta}} + \frac{1}{r} \frac{\partial A _ z}{\partial \theta} \vec{e} _ {\theta} \times \vec{e} _ z + A _ r \vec{e} _ z \times \frac{\partial \vec{e} _ r}{\partial z}+\frac{\partial A _ r}{\partial z} \vec{e} _ z \times \vec{e} _ r + A _ {\theta} \vec{e} _ z \times \frac{\partial \vec{e} _ {\theta}}{\partial z} + \frac{\partial A _ {\theta}}{\partial z} \vec{e} _ z \times \vec{e} _ {\theta} + A _ z \vec{e} _ z \times \frac{\partial \vec{e} _ z}{\partial z} + \frac{\partial A _ z}{\partial z} \vec{e} _ z \times \vec{e} _ z
+= A _ r \vec{e} _ r \times \frac{\partial \vec{e} _ r}{\partial r} + \frac{\partial A _ r}{\partial r} \vec{e} _ r \times \vec{e} _ r + A _ {\theta} \vec{e} _ r \times \frac{\partial \vec{e} _ {\theta}}{\partial r} + \frac{\partial A _ {\theta}}{\partial r} \vec{e} _ r \times \vec{e} _ {\theta}
+$$
+
+$$
++A _ z \vec{e} _ r \times \frac{\partial \vec{e} _ z}{\partial r} + \frac{\partial A _ z}{\partial r} \vec{e} _ r \times \vec{e} _ z + \frac{1}{r} A _ r \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ r}{\partial {\theta}} + \frac{1}{r} \frac{\partial A _ r}{\partial \theta} \vec{e} _ {\theta} \times \vec{e} _ r + \frac{1}{r} A _ {\theta} \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ \theta}{\partial \theta}
+$$
+
+$$
++\frac{1}{r} \frac{\partial A _ {\theta}}{\partial r} \vec{e} _ {\theta} \times \vec{e} _ {\theta} + \frac{1}{r} A _ z \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ z}{\partial {\theta}} + \frac{1}{r} \frac{\partial A _ z}{\partial \theta} \vec{e} _ {\theta} \times \vec{e} _ z
+$$
+
+$$
++A _ r \vec{e} _ z \times \frac{\partial \vec{e} _ r}{\partial z}+\frac{\partial A _ r}{\partial z} \vec{e} _ z \times \vec{e} _ r + A _ {\theta} \vec{e} _ z \times \frac{\partial \vec{e} _ {\theta}}{\partial z} + \frac{\partial A _ {\theta}}{\partial z} \vec{e} _ z \times \vec{e} _ {\theta} + A _ z \vec{e} _ z \times \frac{\partial \vec{e} _ z}{\partial z} + \frac{\partial A _ z}{\partial z} \vec{e} _ z \times \vec{e} _ z
 $$
 
 $$
