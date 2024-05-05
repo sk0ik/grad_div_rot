@@ -95,32 +95,22 @@ $$
 となるが基底ベクトルの微分
 
 $$
-\frac{\partial}{\partial r} \vec{e} _ r
-=
-0,\frac{\partial}{\partial r} \vec{e} _ \theta
-=
-0,\frac{\partial}{\partial r} \vec{e} _ z
-=
+\frac{\partial}{\partial r} \vec{e} _ r =
+0,\frac{\partial}{\partial r} \vec{e} _ \theta =
+0,\frac{\partial}{\partial r} \vec{e} _ z = 0
+$$
+
+$$
+\frac{\partial}{\partial \theta} \vec{e} _ r =
+\vec{e} _ \theta, \frac{\partial}{\partial \theta} \vec{e} _ \theta =
+-\vec{e} _ r, \frac{\partial}{\partial \theta} \vec{e} _ z =
 0
 $$
 
 $$
-\frac{\partial}{\partial \theta} \vec{e} _ r
-=
-\vec{e} _ \theta, \frac{\partial}{\partial \theta} \vec{e} _ \theta
-=
--\vec{e} _ r, \frac{\partial}{\partial \theta} \vec{e} _ z
-=
-0
-$$
-
-$$
-\frac{\partial}{\partial z} \vec{e} _ r
-=
-0, \frac{\partial}{\partial z} \vec{e} _ \theta
-=
-0, \frac{\partial}{\partial z} \vec{e} _ z
-=
+\frac{\partial}{\partial z} \vec{e} _ r =
+0, \frac{\partial}{\partial z} \vec{e} _ \theta =
+0, \frac{\partial}{\partial z} \vec{e} _ z =
 0
 $$
 
