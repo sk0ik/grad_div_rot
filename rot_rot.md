@@ -13,7 +13,9 @@ a
 &=
 b \newline
 &=
-c
+c \newline
+&=
+d
 \end{aligned}
 $$
 
