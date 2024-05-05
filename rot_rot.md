@@ -7,7 +7,15 @@
 
 ## なぜそんなことを考えるのかh
 
-aa
+$$
+\begin{aligned}
+a
+&=
+b \newline
+&=
+c
+\end{aligned}
+$$
 
 電磁気学ではしばしばマクスウェル方程式から
 
