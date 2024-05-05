@@ -7,16 +7,6 @@
 
 ## なぜそんなことを考えるのか
 
-$$
-\begin{aligned}
-a
-&=
-c \newline
-&+
-d
-\end{aligned}
-$$
-
 電磁気学ではしばしばマクスウェル方程式から
 
 $$
@@ -123,8 +113,7 @@ $$
 \begin{aligned}
 \nabla \times \vec{A}
 &=
-\Bigl(\vec{e} _ r \frac{\partial}{\partial r} + \frac{1}{r} \vec{e} _ \theta \frac{\partial}{\partial \theta} + \vec{e} _ z \frac{\partial}{\partial z} \Bigr
-) \times (\vec{e} _ r A _ r + \vec{e} _ {\theta} A _ {\theta}) \newline
+\Bigl (\vec{e} _ r \frac{\partial}{\partial r} + \frac{1}{r} \vec{e} _ \theta \frac{\partial}{\partial \theta} + \vec{e} _ z \frac{\partial}{\partial z} \Bigr ) \times (\vec{e} _ r A _ r + \vec{e} _ {\theta} A _ {\theta}) \newline
 &=
 \vec{e} _ r \frac{\partial}{\partial r} \times (\vec{e} _ r A _ r) + \vec{e} _ r \frac{\partial}{\partial r} \times (\vec{e} _ {\theta} A _ {\theta}) + \frac{1}{r} \vec{e} _ {\theta} \frac{\partial}{\partial \theta} \times (\vec{e} _ r A _ r) + \frac{1}{r} \vec{e} _ {\theta} \frac{\partial}{\partial \theta} \times (\vec{e} _ {\theta} A _ {\theta}) \newline
 &+
