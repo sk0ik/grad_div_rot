@@ -78,7 +78,7 @@ $$
 0 \newline
 \frac{\partial}{\partial r} \vec{e} _ z
 &=
-? \newline
+0 \newline
 \frac{\partial}{\partial \theta} \vec{e} _ r
 &=
 \vec{e} _ \theta \newline
@@ -87,16 +87,16 @@ $$
 -\vec{e} _ r \newline
 \frac{\partial}{\partial \theta} \vec{e} _ z
 &=
-? \newline
+0 \newline
 \frac{\partial}{\partial z} \vec{e} _ r
 &=
-? \newline
+0 \newline
 \frac{\partial}{\partial z} \vec{e} _ \theta
 &=
-? \newline
+0 \newline
 \frac{\partial}{\partial z} \vec{e} _ z
 &=
-? \newline
+0 \newline
 \end{aligned}
 $$
 
@@ -119,6 +119,10 @@ $$
 
 $$
 = A _ r \vec{e} _ r \times \frac{\partial \vec{e} _ r}{\partial r}+\frac{\partial A _ r}{\partial r} \vec{e} _ r \times \vec{e} _ r + A _ {\theta} \vec{e} _ r \times \frac{\partial \vec{e} _ {\theta}}{\partial r}+\frac{\partial A _ {\theta}}{\partial r} \vec{e} _ r \times \vec{e} _ {\theta}+\frac{1}{r} A _ r \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ r}{\partial {\theta}} + \frac{1}{r} \frac{\partial A _ r}{\partial \theta} \vec{e} _ {\theta} \times \vec{e} _ r + \frac{1}{r} A _ {\theta} \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ \theta}{\partial \theta} + \frac{1}{r} \frac{\partial A _ {\theta}}{\partial r} \vec{e} _ {\theta} \times \vec{e} _ {\theta}+A _ r \vec{e} _ z \times \frac{\partial \vec{e} _ r}{\partial z}+\frac{\partial A _ r}{\partial z} \vec{e} _ z \times \vec{e} _ r+A _ {\theta} \vec{e} _ z \times \frac{\partial \vec{e} _ {\theta}}{\partial z}+\frac{\partial A _ {\theta}}{\partial z} \vec{e} _ z \times \vec{e} _ {\theta}
+$$
+
+$$
+ss
 $$
 
 例えば解として2次元極座標で表した
