@@ -1,8 +1,17 @@
 # 回転を2回とるということについて考える
 
-- [回転を2回とるということについて考える](#回転を2回とるということについて考える)
-  - [なぜそんなことを考えるのか](#なぜそんなことを考えるのか)
-  - [どんな解があるか](#どんな解があるか)
+1. [回転を2回とるということについて考える](#回転を2回とるということについて考える)
+   1. [なぜそんなことを考えるのか](#なぜそんなことを考えるのか)
+   2. [数式で見てみる](#数式で見てみる)
+2. [\\frac{\\partial}{\\partial r} \\vec{e} \_ r](#fracpartialpartial-r-vece-_-r)
+3. [0,\\frac{\\partial}{\\partial r} \\vec{e} \_ \\theta](#0fracpartialpartial-r-vece-_-theta)
+4. [0,\\frac{\\partial}{\\partial r} \\vec{e} \_ z](#0fracpartialpartial-r-vece-_-z)
+5. [\\frac{\\partial}{\\partial \\theta} \\vec{e} \_ r](#fracpartialpartial-theta-vece-_-r)
+6. [\\vec{e} \_ \\theta, \\frac{\\partial}{\\partial \\theta} \\vec{e} \_ \\theta](#vece-_-theta-fracpartialpartial-theta-vece-_-theta)
+7. [-\\vec{e} \_ r, \\frac{\\partial}{\\partial \\theta} \\vec{e} \_ z](#-vece-_-r-fracpartialpartial-theta-vece-_-z)
+8. [\\frac{\\partial}{\\partial z} \\vec{e} \_ r](#fracpartialpartial-z-vece-_-r)
+9. [0, \\frac{\\partial}{\\partial z} \\vec{e} \_ \\theta](#0-fracpartialpartial-z-vece-_-theta)
+10. [0, \\frac{\\partial}{\\partial z} \\vec{e} \_ z](#0-fracpartialpartial-z-vece-_-z)
 
 ## なぜそんなことを考えるのか
 
@@ -35,7 +44,7 @@ $$
 <img src="pic\nabla_cdot_nabla.png" alt="alt text" width="300">
 </div>
 
-のように $E$ を入れると $-k^2$ 倍されて出てくる.
+のように $E$ を入れると $-k^2$ 倍されて出てくる.この演算をスカラーラプラシアンと言う.
 
 上では電場をスカラー場としたがもし,電場がベクトル場の時は
 
@@ -52,13 +61,13 @@ $$
 <img src="pic\nabla_times_nabla_times.png" alt="alt text" width="300">
 </div>
 
-というような固有関数となるが先ほどと違い, $\vec{E}$ を入れると $k^2 \vec{E}$ のように $k^2$ 倍されて出てくる.
+というような固有関数となるが先ほどと違い, $\vec{E}$ を入れると $k^2 \vec{E}$ のように $k^2$ 倍されて出てくる.この演算をベクトルラプラシアンと言う.
 
 電場がベクトル場である電磁波(光)はベクトルビームと呼ばれている.これに対応して電場がスカラー場であるものはスカラービームと呼ばれている.例えばスカラービームには直線偏光や円偏光がある.
 
 まとめると真空中のベクトルビームは回転を2回とるという演算の固有関数になっている.(固有値は $k^2$)
 
-## どんな解があるか
+## 数式で見てみる
 
 円筒座標系でのナブラは
 
@@ -66,69 +75,110 @@ $$
 \nabla = \vec{e _ r} \frac{\partial}{\partial r} + \vec{e _ \theta} \frac{1}{r} \frac{\partial}{\partial \theta} + \vec{e} _ z \frac{\partial}{\partial z}
 $$
 
-でるので基底ベクトルの微分
+で表される.スカラー場
 
 $$
-\begin{aligned}
+A(r, \theta, z)
+$$
+
+に対してスカラーラプラシアンをとると
+
+$$
+\nabla \cdot (\nabla A) =
+\nabla \cdot (\vec{e _ r} \frac{\partial A}{\partial r} + \vec{e _ \theta} \frac{1}{r} \frac{\partial A}{\partial \theta} + \vec{e} _ z \frac{\partial A}{\partial z})
+$$
+
+$$
+(\vec{e _ r} \frac{\partial}{\partial r} + \vec{e _ \theta} \frac{1}{r} \frac{\partial}{\partial \theta} + \vec{e} _ z \frac{\partial}{\partial z}) \cdot (\vec{e _ r} \frac{\partial A}{\partial r} + \vec{e _ \theta} \frac{1}{r} \frac{\partial A}{\partial \theta} + \vec{e} _ z \frac{\partial A}{\partial z})
+$$
+
+となるが基底ベクトルの微分
+
+$$
 \frac{\partial}{\partial r} \vec{e} _ r
-&=
-0 \newline
-\frac{\partial}{\partial r} \vec{e} _ \theta
-&=
-0 \newline
-\frac{\partial}{\partial r} \vec{e} _ z
-&=
-0 \newline
+=
+0,\frac{\partial}{\partial r} \vec{e} _ \theta
+=
+0,\frac{\partial}{\partial r} \vec{e} _ z
+=
+0
+$$
+
+$$
 \frac{\partial}{\partial \theta} \vec{e} _ r
-&=
-\vec{e} _ \theta \newline
-\frac{\partial}{\partial \theta} \vec{e} _ \theta
-&=
--\vec{e} _ r \newline
-\frac{\partial}{\partial \theta} \vec{e} _ z
-&=
-0 \newline
+=
+\vec{e} _ \theta, \frac{\partial}{\partial \theta} \vec{e} _ \theta
+=
+-\vec{e} _ r, \frac{\partial}{\partial \theta} \vec{e} _ z
+=
+0
+$$
+
+$$
 \frac{\partial}{\partial z} \vec{e} _ r
-&=
-0 \newline
-\frac{\partial}{\partial z} \vec{e} _ \theta
-&=
-0 \newline
-\frac{\partial}{\partial z} \vec{e} _ z
-&=
-0 \newline
-\end{aligned}
+=
+0, \frac{\partial}{\partial z} \vec{e} _ \theta
+=
+0, \frac{\partial}{\partial z} \vec{e} _ z
+=
+0
 $$
 
-と外積の線形性を用いて2次元極座標のベクトル場
+に気を付けて計算すると
+
+↓ここから05/05
 
 $$
-\vec{A} = \vec{e} _ r A _ r  + \vec{e} _ {\theta} A _ {\theta} 
+\vec{e _ r} \frac{\partial}{\partial r} \cdot (\vec{e _ r} \frac{\partial A}{\partial r}) + \vec{e _ \theta} \frac{1}{r} \frac{\partial}{\partial \theta} \cdot (\vec{e _ \theta} \frac{1}{r} \frac{\partial A}{\partial \theta}) + \vec{e} _ z \frac{\partial}{\partial z} \cdot (\vec{e} _ z \frac{\partial A}{\partial z})
+$$
+
+$$
+= \frac{\partial A}{\partial r} \vec{e _ r} \cdot \frac{\partial \vec{e _ r}}{\partial r} + \frac{\partial ^2 A}{\partial r^2} \vec{e _ r} \cdot \vec{e _ r} + \frac{1}{r^2} \vec{e _ \theta} \cdot \frac{\partial \vec{e _ {\theta}}}{\partial \theta} + \frac{1}{r^2} \frac{\partial ^2 A}{\partial \theta ^2} \vec{e _ \theta} \cdot \vec{e _ {\theta}} + \frac{\partial ^2 A}{\partial z ^2} \vec{e} _ z \cdot \vec{e} _ z + \frac{\partial A}{\partial z} \vec{e} _ z \cdot \frac{\partial \vec{e} _ z}{\partial z}
+$$
+
+$$
+= \frac{\partial ^2 A}{\partial r^2} - \frac{1}{r^2} \vec{e _ \theta} \cdot \vec{e _ r} + \frac{1}{r^2} \frac{\partial ^2 A}{\partial \theta ^2} + \frac{\partial ^2 A}{\partial z ^2}
+$$
+
+と外積の線形性を用いて円筒座標系のベクトル場
+
+$$
+\vec{A} = \vec{e} _ r A _ r  + \vec{e} _ {\theta} A _ {\theta} + \vec{e} _ z A _ z
 $$
 
 に対して回転をとると
 
 $$
 \nabla \times \vec{A} =
-\Bigl(\vec{e} _ r \frac{\partial}{\partial r}+\frac{1}{r} \vec{e} _ \theta \frac{\partial}{\partial \theta}+\vec{e} _ z \frac{\partial}{\partial z} \Bigr) \times (\vec{e} _ r A _ r+\vec{e} _ {\theta} A _ {\theta})
+\Bigl(\vec{e} _ r \frac{\partial}{\partial r}+\frac{1}{r} \vec{e} _ \theta \frac{\partial}{\partial \theta}+\vec{e} _ z \frac{\partial}{\partial z} \Bigr) \times (\vec{e} _ r A _ r+\vec{e} _ {\theta} A _ {\theta} + \vec{e} _ z A _ z)
 $$
 
 $$
-= \vec{e} _ r \frac{\partial}{\partial r} \times (\vec{e} _ r A _ r)+\vec{e} _ r \frac{\partial}{\partial r} \times (\vec{e} _ {\theta} A _ {\theta})+\frac{1}{r} \vec{e} _ {\theta} \frac{\partial}{\partial \theta} \times (\vec{e} _ r A _ r)+\frac{1}{r} \vec{e} _ {\theta} \frac{\partial}{\partial \theta} \times (\vec{e} _ {\theta} A _ {\theta})+\vec{e} _ z \frac{\partial}{\partial z}(\vec{e} _ r A _ r)+\vec{e} _ z \frac{\partial}{\partial z} (\vec{e} _ {\theta} A _ {\theta})
+= \vec{e} _ r \frac{\partial}{\partial r} \times (\vec{e} _ r A _ r) + \vec{e} _ r \frac{\partial}{\partial r} \times (\vec{e} _ {\theta} A _ {\theta}) + \vec{e} _ r \frac{\partial}{\partial r} \times (\vec{e} _ z A _ z) + \frac{1}{r} \vec{e} _ {\theta} \frac{\partial}{\partial \theta} \times (\vec{e} _ r A _ r) + \frac{1}{r} \vec{e} _ {\theta} \frac{\partial}{\partial \theta} \times (\vec{e} _ {\theta} A _ {\theta}) + \frac{1}{r} \vec{e} _ {\theta} \frac{\partial}{\partial \theta} \times (\vec{e} _ z A _ z) + \vec{e} _ z \frac{\partial}{\partial z} \times (\vec{e} _ r A _ r) + \vec{e} _ z \frac{\partial}{\partial z} \times (\vec{e} _ {\theta} A _ {\theta}) + \vec{e} _ z \frac{\partial}{\partial z} \times (\vec{e} _ {z} A _ {z})
 $$
 
 $$
-= A _ r \vec{e} _ r \times \frac{\partial \vec{e} _ r}{\partial r}+\frac{\partial A _ r}{\partial r} \vec{e} _ r \times \vec{e} _ r + A _ {\theta} \vec{e} _ r \times \frac{\partial \vec{e} _ {\theta}}{\partial r}+\frac{\partial A _ {\theta}}{\partial r} \vec{e} _ r \times \vec{e} _ {\theta}+\frac{1}{r} A _ r \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ r}{\partial {\theta}} + \frac{1}{r} \frac{\partial A _ r}{\partial \theta} \vec{e} _ {\theta} \times \vec{e} _ r + \frac{1}{r} A _ {\theta} \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ \theta}{\partial \theta} + \frac{1}{r} \frac{\partial A _ {\theta}}{\partial r} \vec{e} _ {\theta} \times \vec{e} _ {\theta}+A _ r \vec{e} _ z \times \frac{\partial \vec{e} _ r}{\partial z}+\frac{\partial A _ r}{\partial z} \vec{e} _ z \times \vec{e} _ r+A _ {\theta} \vec{e} _ z \times \frac{\partial \vec{e} _ {\theta}}{\partial z}+\frac{\partial A _ {\theta}}{\partial z} \vec{e} _ z \times \vec{e} _ {\theta}
+= A _ r \vec{e} _ r \times \frac{\partial \vec{e} _ r}{\partial r} + \frac{\partial A _ r}{\partial r} \vec{e} _ r \times \vec{e} _ r + A _ {\theta} \vec{e} _ r \times \frac{\partial \vec{e} _ {\theta}}{\partial r} + \frac{\partial A _ {\theta}}{\partial r} \vec{e} _ r \times \vec{e} _ {\theta}  + A _ z \vec{e} _ r \times \frac{\partial \vec{e} _ z}{\partial r} + \frac{\partial A _ z}{\partial r} \vec{e} _ r \times \vec{e} _ z + \frac{1}{r} A _ r \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ r}{\partial {\theta}} + \frac{1}{r} \frac{\partial A _ r}{\partial \theta} \vec{e} _ {\theta} \times \vec{e} _ r + \frac{1}{r} A _ {\theta} \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ \theta}{\partial \theta} + \frac{1}{r} \frac{\partial A _ {\theta}}{\partial r} \vec{e} _ {\theta} \times \vec{e} _ {\theta} + \frac{1}{r} A _ z \vec{e} _ {\theta} \times \frac{\partial \vec{e} _ z}{\partial {\theta}} + \frac{1}{r} \frac{\partial A _ z}{\partial \theta} \vec{e} _ {\theta} \times \vec{e} _ z + A _ r \vec{e} _ z \times \frac{\partial \vec{e} _ r}{\partial z}+\frac{\partial A _ r}{\partial z} \vec{e} _ z \times \vec{e} _ r + A _ {\theta} \vec{e} _ z \times \frac{\partial \vec{e} _ {\theta}}{\partial z} + \frac{\partial A _ {\theta}}{\partial z} \vec{e} _ z \times \vec{e} _ {\theta} + A _ z \vec{e} _ z \times \frac{\partial \vec{e} _ z}{\partial z} + \frac{\partial A _ z}{\partial z} \vec{e} _ z \times \vec{e} _ z
 $$
 
 $$
-ss
+= \frac{\partial A _ {\theta}}{\partial r} \vec{e} _ z - \frac{\partial A _ z}{\partial r} \vec{e} _ {\theta} + \frac{1}{r} A _ r \vec{e} _ {\theta} \times \vec{e} _ {\theta} - \frac{1}{r} \frac{\partial A _ r}{\partial \theta} \vec{e} _ z - \frac{1}{r} A _ {\theta} \vec{e} _ {\theta} \times \vec{e} _ r + \frac{1}{r} \frac{\partial A _ {\theta}}{\partial r} \vec{e} _ {\theta} \times \vec{e} _ {\theta} + \frac{1}{r} \frac{\partial A _ z}{\partial \theta} \vec{e} _ r + \frac{\partial A _ r}{\partial z} \vec{e} _ {\theta} - \frac{\partial A _ {\theta}}{\partial z} \vec{e} _ r
 $$
+
+$$
+= \frac{\partial A _ {\theta}}{\partial r} \vec{e} _ z - \frac{\partial A _ z}{\partial r} \vec{e} _ {\theta} - \frac{1}{r} \frac{\partial A _ r}{\partial \theta} \vec{e} _ z + \frac{1}{r} A _ {\theta} \vec{e} _ z + \frac{1}{r} \frac{\partial A _ z}{\partial \theta} \vec{e} _ r + \frac{\partial A _ r}{\partial z} \vec{e} _ {\theta} - \frac{\partial A _ {\theta}}{\partial z} \vec{e} _ r
+$$
+
+$$
+= \Bigl(\frac{1}{r} \frac{\partial A _ z}{\partial \theta} - \frac{\partial A _ {\theta}}{\partial z} \vec{e} _ r \Bigr) + \Bigl(\frac{\partial A _ r}{\partial z} - \frac{\partial A _ z}{\partial r} \Bigr)\vec{e} _ {\theta} + \Bigl(\frac{1}{r} A _ {\theta} + \frac{\partial A _ {\theta}}{\partial r} - \frac{1}{r} \frac{\partial A _ r}{\partial \theta} \Bigr)\vec{e} _ z
+$$
+
+を得る.(大変だった.)
 
 例えば解として2次元極座標で表した
 
 $$
-\vec{A}(r, \theta) = re^{-r^2} \vec{e} _ {\theta}
+\vec{A}(r, \theta, z) = re^{-r^2} \vec{e} _ {\theta}
 $$
 
 を仮定する.
