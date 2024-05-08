@@ -1,0 +1,162 @@
+@page {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .markdown-preview.markdown-preview {
+
+    p {
+        font-family: 'Kosugi Maru', serif;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        line-height: 1.4;
+        font-size: 17px;
+        color: #000000;
+        text-indent: 0px;
+    }
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Kosugi Maru", serif;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        color: #000000;
+    }
+  
+    h1 {
+        font-size: 30px;
+        font-weight: normal;
+        counter-reset: h2SectionCounter;
+    }
+  
+    h2 {
+        font-size: 20px;
+  
+        &:not(.toc) {
+            counter-increment: h2SectionCounter;
+            counter-reset: h3SectionCounter;
+        }
+    }
+  
+    h3 {
+        font-size: 20px;
+        counter-increment: h3SectionCounter;
+        counter-reset: h4SectionCounter;
+    }
+  
+    h4 {
+        font-size: 20px;
+        counter-increment: h4SectionCounter;
+        counter-reset: h5SectionCounter;
+    }
+  
+    h5 {
+        font-size: 20px;
+        counter-increment: h5SectionCounter;
+    }
+  
+    h2:not(.toc):before {
+        content: counter(h2SectionCounter) ".";
+    }
+  
+    h3:before {
+        content: counter(h2SectionCounter) "."counter(h3SectionCounter) ".";
+    }
+  
+    h4:before {
+        content: counter(h2SectionCounter) "."counter(h3SectionCounter) "."counter(h4SectionCounter) ".";
+    }
+  
+    h5:before {
+        content: counter(h2SectionCounter) "."counter(h3SectionCounter) "."counter(h4SectionCounter) "."counter(h5SectionCounter) ".";
+    }
+  }
+
+@media print {
+    .markdown-preview.markdown-preview {
+
+        p {
+            font-family: 'Kosugi Maru', serif;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            line-height: 1.4;
+            font-size: 17px;
+            color: #000000;
+            text-indent: 0px;
+        }
+      
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Kosugi Maru", serif;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            padding-bottom: 0px;
+            color: #000000;
+        }
+      
+        h1 {
+            font-size: 30px;
+            font-weight: normal;
+            counter-reset: h2SectionCounter;
+        }
+      
+        h2 {
+            font-size: 20px;
+      
+            &:not(.toc) {
+                counter-increment: h2SectionCounter;
+                counter-reset: h3SectionCounter;
+            }
+        }
+      
+        h3 {
+            font-size: 20px;
+            counter-increment: h3SectionCounter;
+            counter-reset: h4SectionCounter;
+        }
+      
+        h4 {
+            font-size: 20px;
+            counter-increment: h4SectionCounter;
+            counter-reset: h5SectionCounter;
+        }
+      
+        h5 {
+            font-size: 20px;
+            counter-increment: h5SectionCounter;
+        }
+      
+        h2:not(.toc):before {
+            content: counter(h2SectionCounter) ".";
+        }
+      
+        h3:before {
+            content: counter(h2SectionCounter) "."counter(h3SectionCounter) ".";
+        }
+      
+        h4:before {
+            content: counter(h2SectionCounter) "."counter(h3SectionCounter) "."counter(h4SectionCounter) ".";
+        }
+      
+        h5:before {
+            content: counter(h2SectionCounter) "."counter(h3SectionCounter) "."counter(h4SectionCounter) "."counter(h5SectionCounter) ".";
+        }
+      }
+}
