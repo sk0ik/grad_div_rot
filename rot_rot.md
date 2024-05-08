@@ -1,7 +1,5 @@
 <div style="text-align: center; font-size: 40px; font-weight: bold;">
 回転を2回とるということについて考える
-</br>
-246521H 小池将平
 </div>
 
 </br>
